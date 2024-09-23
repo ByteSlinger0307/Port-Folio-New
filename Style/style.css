@@ -22,12 +22,12 @@ html,body{
     justify-content: center;
     flex-direction: column;
     z-index: 11;
-    background: black;
+    background: grey;
     transition: 1s ;
 }
 
 .intro p {
-    color: grey; /* Corrected this line */
+    color: #fff; /* Corrected this line */
     font-size: 1.6rem;
     margin-top: 10px;
 }
@@ -185,6 +185,19 @@ html,body{
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+#herofooter a:hover{
+    font-size: 20px;
+    transition: 1s;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#herofooter .dwnld-resume:hover{
+    font-size: 20px;
+    transition: 1s;
 }
 
 #herofooter #iconset{
@@ -383,6 +396,11 @@ html,body{
     margin-top: 10px;
 }
 
+#subscribe a:hover{
+    font-size: 18px;
+    transition: 1s ease-out;
+}
+
 #footer{
     display: flex;
     align-items: center;
@@ -410,4 +428,9 @@ html,body{
     font-weight: 500;
     color: #fff;
     text-decoration: none;
+}
+
+#footer a:hover{
+    font-size: 16px;
+    transition: 1s ease-in-out;
 }
