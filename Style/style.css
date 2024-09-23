@@ -26,11 +26,12 @@ html,body{
     transition: 1s ;
 }
 
-.intro p{
-    columns: grey;
+.intro p {
+    color: grey; /* Corrected this line */
     font-size: 1.6rem;
     margin-top: 10px;
 }
+
 
 .logo{
     font-size: 2.5rem;
