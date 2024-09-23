@@ -9,7 +9,7 @@ function firstPageAnimation(){
     tl.from("#nav",{
         y: '-10',
         opacity: 0,
-        duration: 1.5,
+        duration: .3,
         ease: Expo.easeInOut
     })
 
@@ -24,7 +24,7 @@ function firstPageAnimation(){
         .from("#herofooter",{
             y: -10,
             opacity: 0,
-            duration: -1,
+            duration: 0,
             ease: Expo.easeInOut
         })
 }
