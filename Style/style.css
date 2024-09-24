@@ -505,4 +505,9 @@ html,body{
         justify-content: center;
         /* margin-right: 180px; */
     }
+
+    #second{
+        padding-top: 20px;
+        height: 30vh;
+    }
 }
