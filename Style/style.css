@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "General Sans";
+    /* overflow: hidden; */
 }
 
 html,body{
@@ -22,12 +23,12 @@ html,body{
     justify-content: center;
     flex-direction: column;
     z-index: 11;
-    background: grey;
+    background: black;
     transition: 1s ;
 }
 
 .intro p {
-    color: #fff; /* Corrected this line */
+    color: grey; /* Corrected this line */
     font-size: 1.6rem;
     margin-top: 10px;
 }
@@ -105,22 +106,38 @@ html,body{
     text-decoration: none;
 }
 
-#heading{
+#heading1{
     margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#heading h1{
+#heading1 h1{
     /* letter-spacing: 7px; */
-    margin-left: 30px;
+    /* margin-left: 350px; */
     opacity: .6;
     line-height: 1;
     font-size: 10vw;
     text-transform: uppercase;
 }
 
-#heading #secondh1{
-    margin-left: 200px;
+#heading2{
+    /* margin-top: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#heading2 h1{
+    /* letter-spacing: 7px; */
+    /* margin-left: 350px; */
+    opacity: .6;
+    line-height: 1;
+    font-size: 10vw;
+    text-transform: uppercase;
+}
+
 
 .blocktext{
     display: flex;
@@ -135,7 +152,7 @@ html,body{
     text-align: right;
 }
 
-#smallheadings{
+#smallheadings {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -143,24 +160,25 @@ html,body{
     padding-right: 30px;
 }
 
-#smallheadings h5{
+#smallheadings h5 {
     margin-top: .5vw;
+    margin-bottom: 1vw; /* Adds gap below the heading */
     text-transform: uppercase;
     text-align: right;
     font-size: 1vw;
 }
 
-#smallheadings .lets-connect{
+#smallheadings .lets-connect {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     border: 1px solid #fff;
     border-radius: 100px;
     padding: 0 10px;
-    /* padding -top: 50px; */
+    margin-top: 10px; /* Alternatively, add margin here */
 }
 
-#smallheadings .lets-connect:hover{
+#smallheadings .lets-connect:hover {
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -204,17 +222,6 @@ html,body{
     display: flex;
     gap: 7px;
 }
-
-/* #herofooter #iconset i{
-    color: black;
-}
-
-#herofooter #iconset i:hover{
-    color: white;
-    background-color: black;
-    border: 1px solid #fff;
-    border-radius: 50%;
-} */
 
 
 
@@ -262,22 +269,14 @@ html,body{
     border-top: 1px solid #888;
 }
 
-.elem:hover{
-    opacity: .6;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 3.5vw 3vw;
-    padding-right: 0;
-    border-top: 1px solid #888;
-}
-
 .elem h1{
     text-transform: uppercase;
     font-size: 7.6vw;
     opacity: .7;
+}
+
+.elem h1:hover{
+    opacity: .2;
 }
 
 
@@ -334,6 +333,7 @@ html,body{
     padding-left: 40vw;
     width: 100%;
     background-color: black;
+    overflow:auto;
 
 }
 
@@ -433,4 +433,42 @@ html,body{
 #footer a:hover{
     font-size: 16px;
     transition: 1s ease-in-out;
+}
+
+@media (max-width: 786px) {
+    #nav a {
+        font-size: 25px;
+    }
+
+    #heading1 {
+        margin-top: 150px;
+    }
+
+    #heading1 .bounding h1 {
+        font-size: 15vw;
+    }
+
+    #heading2 .bounding h1 {
+        font-size: 15vw;
+    }
+
+    #smallheadings {
+        padding-right: 15px; /* Adjust padding for smaller screens */
+        display: flex;
+        flex-direction: column; /* Ensure vertical stacking of elements */
+        align-items: flex-end;
+    }
+
+    #smallheadings h5 {
+        font-size: 15px;
+        margin-bottom: 15px; /* Add margin to create a gap below the h5 element */
+    }
+
+    #smallheadings .lets-connect {
+        font-size: 18px;
+    }
+
+    #mini-circle{
+        opacity: 0;
+    }
 }
