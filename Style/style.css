@@ -476,13 +476,19 @@ html,body{
         opacity: 0;
     }
 
+    #herofooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #herofooter .previous-text{
-        opacity: 0;
+        display: none;
         writing-mode: vertical-rl;
     }
 
     #herofooter .dwnld-resume{
-        opacity: 0;
+        display: none;
         margin-top: 150px;
     }
 
@@ -496,6 +502,6 @@ html,body{
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin-right: 180px;
+        /* margin-right: 180px; */
     }
 }
