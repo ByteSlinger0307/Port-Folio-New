@@ -475,4 +475,12 @@ html,body{
     #mini-circle{
         opacity: 0;
     }
+
+    #herofooter .previous-text{
+        writing-mode: vertical-rl;
+    }
+
+    #herofooter .dwnld-resume{
+        margin-top: 150px;
+    }
 }
