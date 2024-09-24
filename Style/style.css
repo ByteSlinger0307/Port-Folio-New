@@ -436,6 +436,10 @@ html,body{
 }
 
 @media (max-width: 786px) {
+    #hero{
+        height: 100vh;
+        width: 100%;
+    }
     #nav a {
         font-size: 25px;
     }
