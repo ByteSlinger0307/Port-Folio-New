@@ -440,10 +440,13 @@ html,body{
 }
 
 @media (max-width: 786px) {
-    #hero{
+    /* Ensure the container is full width */
+    #hero {
         height: 100vh;
         width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
+
     #nav a {
         font-size: 25px;
     }
@@ -452,11 +455,7 @@ html,body{
         margin-top: 150px;
     }
 
-    #heading1 .bounding h1 {
-        font-size: 15vw;
-    }
-
-    #heading2 .bounding h1 {
+    #heading1 .bounding h1, #heading2 .bounding h1 {
         font-size: 15vw;
     }
 
@@ -465,6 +464,7 @@ html,body{
         display: flex;
         flex-direction: column; /* Ensure vertical stacking of elements */
         align-items: flex-end;
+        padding: 0; /* Ensure no excessive padding causes overflow */
     }
 
     #smallheadings h5 {
@@ -476,28 +476,28 @@ html,body{
         font-size: 18px;
     }
 
-    #mini-circle{
+    #mini-circle {
         opacity: 0;
     }
 
-    #herofooter{
+    #herofooter {
         margin-bottom: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    #herofooter .previous-text{
+    #herofooter .previous-text {
         display: none;
         writing-mode: vertical-rl;
     }
 
-    #herofooter .dwnld-resume{
+    #herofooter .dwnld-resume {
         display: none;
         margin-top: 150px;
     }
 
-    #herofooter #iconset{
+    #herofooter #iconset {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -507,75 +507,31 @@ html,body{
         text-align: center;
         align-items: center;
         justify-content: center;
-        /* margin-right: 180px; */
     }
 
-    #second{
+    #second {
         padding-top: 20px;
         height: 30vh;
     }
 
     #about {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 50px;
-        background-color: black;
-    }
-    
-    #about img {
-        width: 250px; /* Adjust the size based on your preference */
-        height: auto;
-    }
-    
-    #textabout {
-        max-width: 500px;
-        margin-left: 20px;
-    }
-    
-    #textabout h5 {
-        margin-bottom: 10px;
-        font-size: 24px;
-        text-transform: uppercase;
-    }
-    
-    #textabout p {
-        font-size: 18px;
-        line-height: 1.6;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    #textabout a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 16px;
-        border: 1px solid #fff;
-        padding: 10px 20px;
-        border-radius: 30px;
-    }
-    
-    #textabout a:hover {
-        background-color: #fff;
-        color: black;
-    }
-    
-
-    #about {
         flex-direction: column;
         align-items: center;
-        text-align: center; /* Center-align text content */
+        text-align: center;
+        padding: 20px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
-    
+
     #about img {
-        margin-bottom: 20px; /* Adds space between image and text */
-        margin: 0 auto; /* Ensures the image is centered */
+        margin-bottom: 20px;
+        margin: 0 auto;
+        max-width: 100%; /* Ensure image does not exceed the viewport width */
     }
-    
+
     #textabout {
-        margin-left: 0; /* Removes left margin for smaller screens */
+        margin-left: 0;
+        padding: 0 15px; /* Add some padding to avoid text overflow */
+        box-sizing: border-box; /* Ensure padding is included in the element's width */
+        max-width: 100%; /* Ensure text does not exceed viewport */
     }
-    
-    
 }
