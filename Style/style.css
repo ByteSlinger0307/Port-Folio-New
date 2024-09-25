@@ -10,7 +10,10 @@
 html,body{
     width: 100%;
     height: 100%;
+    color: #fff;
 }
+
+
 
 .intro{
     position: fixed;
@@ -67,6 +70,7 @@ html,body{
     border-radius: 50%;
     background-color: #fff;
 }
+
 
 .bounding{
     width: fit-content;
@@ -349,7 +353,7 @@ html,body{
 }
 
 #textabout p{
-    line-height: 1.7;
+    /* line-height: 1.7; */
     margin-bottom: 30px;
 }
 
@@ -509,5 +513,36 @@ html,body{
     #second{
         padding-top: 20px;
         height: 30vh;
+    }
+
+    #about{
+        display:grid;
+        align-items: center;
+        justify-content: center;
+        /* justify-content: space-between; */
+        gap: 50px;
+        color: #fff;
+        padding: 10vw 10vw;
+        /* padding-left: 40vw; */
+        width: 100vw;
+        background-color: black;
+        overflow:auto;
+    
+    }
+    
+    #textabout{
+        width: 19rem;
+        /* background-color: red; */
+    }
+    
+    #textabout h5{
+        text-transform: uppercase;
+        opacity: .6;
+        margin-bottom: 10px;
+    }
+    
+    #textabout p{
+        line-height: 1.7;
+        /* margin-bottom: 30px; */
     }
 }
