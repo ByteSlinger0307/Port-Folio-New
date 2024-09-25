@@ -515,34 +515,67 @@ html,body{
         height: 30vh;
     }
 
-    #about{
-        display:grid;
+    #about {
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        /* justify-content: space-between; */
-        gap: 50px;
-        color: #fff;
-        padding: 10vw 10vw;
-        /* padding-left: 40vw; */
-        width: 100vw;
+        justify-content: space-between;
+        padding: 50px;
         background-color: black;
-        overflow:auto;
-    
     }
     
-    #textabout{
-        width: 19rem;
-        /* background-color: red; */
+    #about img {
+        width: 250px; /* Adjust the size based on your preference */
+        height: auto;
     }
     
-    #textabout h5{
-        text-transform: uppercase;
-        opacity: .6;
+    #textabout {
+        max-width: 500px;
+        margin-left: 20px;
+    }
+    
+    #textabout h5 {
         margin-bottom: 10px;
+        font-size: 24px;
+        text-transform: uppercase;
     }
     
-    #textabout p{
-        line-height: 1.7;
-        /* margin-bottom: 30px; */
+    #textabout p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+    
+    #textabout a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+    
+    #textabout a:hover {
+        background-color: #fff;
+        color: black;
+    }
+    
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center-align text content */
+    }
+    
+    #about img {
+        margin-bottom: 20px; /* Adds space between image and text */
+        margin: 0 auto; /* Ensures the image is centered */
+    }
+    
+    #textabout {
+        margin-left: 0; /* Removes left margin for smaller screens */
+    }
+    
+    
 }
