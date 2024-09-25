@@ -469,7 +469,7 @@ html,body{
 
     #smallheadings h5 {
         font-size: 15px;
-        margin-bottom: 15px; /* Add margin to create a gap below the h5 element */
+        margin-bottom: 15px; 
     }
 
     #smallheadings .lets-connect {
@@ -518,7 +518,7 @@ html,body{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px;
+        padding: 50px;
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
@@ -533,5 +533,33 @@ html,body{
         padding: 0 15px; /* Add some padding to avoid text overflow */
         box-sizing: border-box; /* Ensure padding is included in the element's width */
         max-width: 100%; /* Ensure text does not exceed viewport */
+    }
+
+    #footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* padding: 40px 30px; */
+        background-color: black;
+        color: #fff;
+    }
+    
+    #footerleft{
+        display: none;
+    }
+    
+    #footerright{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #footer a{
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
     }
 }
