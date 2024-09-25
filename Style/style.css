@@ -464,7 +464,7 @@ html,body{
         display: flex;
         flex-direction: column; /* Ensure vertical stacking of elements */
         align-items: flex-end;
-        padding: 0; /* Ensure no excessive padding causes overflow */
+        padding-right: 35px; /* Ensure no excessive padding causes overflow */
     }
 
     #smallheadings h5 {
